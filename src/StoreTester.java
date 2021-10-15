@@ -14,8 +14,8 @@ public class StoreTester {
         authors.add("Julie");
         authors.add("Karen");
 
-//        store.addItem(new Book("Into the Wilds 2: Return of the Wilds", 19.99, LocalDate.of(1999, 11, 22), 10, authors));
-//
+        store.addItem(new Book("Into the Wilds 2: Return of the Wilds", 19.99, LocalDate.of(1999, 11, 22), 10, authors));
+
 //        store.addItem(new Movie("Into the Wilds", 22.00, LocalDate.of(1999, 11, 22), 10, "Bob", "Joe"));
 //
 //        store.addItem(new CompactDisc("The Tide, The Thief, and River's End", 40.00, LocalDate.of(2013, 10, 4), 100, "Caligula's Horse"));
@@ -24,7 +24,7 @@ public class StoreTester {
 //
 //        store.addItem(new Game("Halo 7: Even More Infinite - Diamond Edition", 1099.99, LocalDate.of(2026, 1, 17), 3500, "Bungie", false));
 //
-//        store.listInventory();
+        store.listInventory();
 ////
 //        int idToFind = 9000;
 //        Item i = store.checkForItem(idToFind);
