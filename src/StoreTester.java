@@ -7,13 +7,13 @@ import java.util.ArrayList;
 public class StoreTester {
 
     public static void main(String[] args) {
-//        Store store = new Store();
-//
-//        ArrayList<String> authors = new ArrayList<String>();
-//        authors.add("Jim");
-//        authors.add("Julie");
-//        authors.add("Karen");
-//
+        Store store = new Store();
+
+        ArrayList<String> authors = new ArrayList<String>();
+        authors.add("Jim");
+        authors.add("Julie");
+        authors.add("Karen");
+
 //        store.addItem(new Book("Into the Wilds 2: Return of the Wilds", 19.99, LocalDate.of(1999, 11, 22), 10, authors));
 //
 //        store.addItem(new Movie("Into the Wilds", 22.00, LocalDate.of(1999, 11, 22), 10, "Bob", "Joe"));
@@ -25,7 +25,7 @@ public class StoreTester {
 //        store.addItem(new Game("Halo 7: Even More Infinite - Diamond Edition", 1099.99, LocalDate.of(2026, 1, 17), 3500, "Bungie", false));
 //
 //        store.listInventory();
-//
+////
 //        int idToFind = 9000;
 //        Item i = store.checkForItem(idToFind);
 //
