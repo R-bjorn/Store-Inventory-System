@@ -20,8 +20,13 @@ public class Item extends Store {
         currentItemID += 100;
     }
 
-    public Item(int itemID){
+    public Item(String title, double regularPrice, LocalDate releaseDate, int quantity, int itemID){
         super();
+        this.title = title;
+        this.regularPrice = regularPrice;
+        this.releaseDate = releaseDate;
+        this.quantity = (Math.min(quantity, 100));
+        this.quantity = quantity;
         this.itemID = itemID;
     }
 
@@ -68,7 +73,7 @@ public class Item extends Store {
     }
 
     public String toString(){
-        return "ITEM: " + this.itemID + "\n" +
+        return "ITEM: " + (currentItemID-100) + "\n" +
                 "Title: " + this.title + "\n" +
             "Regular Price: " + this.regularPrice + "\n" +
             "Release Date: " + this.releaseDate + "\n" +
@@ -76,7 +81,7 @@ public class Item extends Store {
             "Quantity: " + this.quantity + "\n";
     }
 
-    public Item makeCopy(){
+    public Object makeCopy(){
         return this;
     }
 

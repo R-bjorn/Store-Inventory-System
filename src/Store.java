@@ -37,7 +37,7 @@ public class Store {
         return inventoryString;
     }
 
-    private void listInventory(){
+    public void listInventory(){
         System.out.println("Here are all the inventory items:");
         System.out.println(getInventoryString());
     }
@@ -45,7 +45,7 @@ public class Store {
     public Item checkForItem(int itemId){
         for(Item e : inventory){
             if (e.getItemID() == itemId){
-                return e.makeCopy();
+                return (Item) e.makeCopy();
             }
         }
         return null;
