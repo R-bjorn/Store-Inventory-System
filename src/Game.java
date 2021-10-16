@@ -24,7 +24,7 @@ public class Game extends Item{
     }
 
     public String toString(){
-        return super.toString() + "Studio: " + studio + "\nDiscontinued: " + discontinued;
+        return super.toString() + "\tStudio: " + studio + "\n\tDiscontinued: " + discontinued;
     }
 
     @Override

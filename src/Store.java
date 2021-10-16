@@ -16,7 +16,7 @@ public class Store {
         inventory.add(newItem);
     }
 
-    private boolean makeSale(int itemId, int quantity, LocalDate sellDate){
+    public boolean makeSale(int itemId, int quantity, LocalDate sellDate){
         Item item = getItemByID(itemId);
         if(inventory.isEmpty() || getItemByID(itemId) == null){
             return false;
@@ -45,7 +45,7 @@ public class Store {
     public Item checkForItem(int itemId){
         for(Item e : inventory){
             if (e.getItemID() == itemId){
-                return (Item) e.makeCopy();
+                return e;
             }
         }
         return null;
@@ -69,6 +69,6 @@ public class Store {
     }
 
     public String toString(){
-        return "Total sales value: " + totalSalesValue + "Total number of sales: " + totalNumberOfSales + "Current inventory" + getInventoryString();
+        return "Store total sales value: " + totalSalesValue + "\nStore total number of sales: " + totalNumberOfSales + "\nStore current inventory:" + getInventoryString();
     }
 }

@@ -22,8 +22,8 @@ public class Book extends Item {
 
         public String toString(){
             StringBuilder author = new StringBuilder();
-            for(String s : authors) author.append("\n\t").append(s);
-            return super.toString()  + "Authors:" + author;
+            for(String s : authors) author.append("\n\t\t").append(s);
+            return super.toString()  + "\tAuthors:" + author;
         }
 
         public double getPrice(LocalDate sellDate){

@@ -17,7 +17,7 @@ public class Movie extends Item{
     // Methods
 
     public String toString(){
-        return super.toString() + "Director: " + director + "\nProducer: " +producer;
+        return super.toString() + "\tDirector: " + director + "\n\tProducer: " +producer;
     }
 
 //    Copy Function

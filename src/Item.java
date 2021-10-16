@@ -16,7 +16,7 @@ public class Item extends Store {
         this.regularPrice = regularPrice;
         this.releaseDate = releaseDate;
         this.quantity = (Math.min(quantity, 100));
-        this.quantity = quantity;
+        this.quantity = Math.min(100, quantity);
         this.itemID = currentItemID;
         currentItemID += 100;
     }
@@ -27,7 +27,7 @@ public class Item extends Store {
         this.regularPrice = regularPrice;
         this.releaseDate = releaseDate;
         this.quantity = (Math.min(quantity, 100));
-        this.quantity = quantity;
+        this.quantity = Math.min(100, quantity);
         this.itemID = itemID;
     }
 
@@ -67,6 +67,7 @@ public class Item extends Store {
 
     public boolean addStock(int amount){
         if(quantity == 100 || (quantity + amount > 100)){
+//            quantity = 100;
             return false;
         }
         quantity += amount;
@@ -74,12 +75,12 @@ public class Item extends Store {
     }
 
     public String toString(){
-        return "ITEM: " + (itemID) + "\n" +
-                "Title: " + this.title + "\n" +
-            "Regular Price: " + this.regularPrice + "\n" +
-            "Release Date: " + this.releaseDate + "\n" +
-            "Discount: " + this.discount + "\n" +
-            "Quantity: " + this.quantity + "\n";
+        return "ITEM " + (itemID) + ":\n" +
+                "\tTitle: " + this.title + "\n" +
+            "\tRegular Price: " + this.regularPrice + "\n" +
+            "\tRelease Date: " + this.releaseDate + "\n" +
+            "\tDiscount: " + this.discount + "\n" +
+            "\tQuantity: " + this.quantity + "\n";
     }
 
     public Object makeCopy(){

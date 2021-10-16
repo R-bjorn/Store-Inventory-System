@@ -14,7 +14,7 @@ public class CompactDisc extends Item{
     }
 //    3rd constructor
     public String toString(){
-        return super.toString() + "Band: " + bandName + "\nRecord Label: " + recordLabel;
+        return super.toString() + "\tBand: " + bandName + "\n\tRecord Label: " + recordLabel;
     }
 
     // Make a copy function
