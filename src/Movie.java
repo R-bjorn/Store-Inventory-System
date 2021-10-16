@@ -13,4 +13,13 @@ public class Movie extends Item{
 //    public Movie(){
 //
 //    }
+
+    // Methods
+
+    public String toString(){
+        return super.toString() + "Director: " + director + "\nProducer: " +producer;
+    }
+
+//    Copy Function
+//    public
 }
