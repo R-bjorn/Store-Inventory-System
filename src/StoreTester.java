@@ -22,7 +22,7 @@ public class StoreTester {
 //
 //        store.addItem(new CompactDisc("Rise Radiant", 50.00, LocalDate.of(2020, 5, 22), 200, "Caligula's Horse", "Inside Out Music"));
 //
-//        store.addItem(new Game("Halo 7: Even More Infinite - Diamond Edition", 1099.99, LocalDate.of(2026, 1, 17), 3500, "Bungie", false));
+        store.addItem(new Game("Halo 7: Even More Infinite - Diamond Edition", 1099.99, LocalDate.of(2026, 1, 17), 3500, "Bungie", false));
 //
         store.listInventory();
 ////
