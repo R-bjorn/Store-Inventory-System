@@ -17,6 +17,7 @@ public class Item extends Store {
         this.releaseDate = releaseDate;
         this.quantity = (Math.min(quantity, 100));
         this.quantity = quantity;
+        this.itemID = currentItemID;
         currentItemID += 100;
     }
 
@@ -73,7 +74,7 @@ public class Item extends Store {
     }
 
     public String toString(){
-        return "ITEM: " + (currentItemID-100) + "\n" +
+        return "ITEM: " + (itemID) + "\n" +
                 "Title: " + this.title + "\n" +
             "Regular Price: " + this.regularPrice + "\n" +
             "Release Date: " + this.releaseDate + "\n" +
