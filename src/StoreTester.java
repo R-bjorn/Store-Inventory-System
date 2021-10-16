@@ -17,12 +17,12 @@ public class StoreTester {
         store.addItem(new Book("Into the Wilds 2: Return of the Wilds", 19.99, LocalDate.of(1999, 11, 22), 10, authors));
 
 //        store.addItem(new Movie("Into the Wilds", 22.00, LocalDate.of(1999, 11, 22), 10, "Bob", "Joe"));
-//
-//        store.addItem(new CompactDisc("The Tide, The Thief, and River's End", 40.00, LocalDate.of(2013, 10, 4), 100, "Caligula's Horse"));
-//
-//        store.addItem(new CompactDisc("Rise Radiant", 50.00, LocalDate.of(2020, 5, 22), 200, "Caligula's Horse", "Inside Out Music"));
-//
-        store.addItem(new Game("Halo 7: Even More Infinite - Diamond Edition", 1099.99, LocalDate.of(2026, 1, 17), 3500, "Bungie", false));
+
+        store.addItem(new CompactDisc("The Tide, The Thief, and River's End", 40.00, LocalDate.of(2013, 10, 4), 100, "Caligula's Horse"));
+
+        store.addItem(new CompactDisc("Rise Radiant", 50.00, LocalDate.of(2020, 5, 22), 200, "Caligula's Horse", "Inside Out Music"));
+
+//        store.addItem(new Game("Halo 7: Even More Infinite - Diamond Edition", 1099.99, LocalDate.of(2026, 1, 17), 3500, "Bungie", false));
 //
         store.listInventory();
 ////
