@@ -26,8 +26,9 @@ public class Book extends Item {
             return super.toString()  + "\tAuthors:" + author;
         }
 
-        public double getPrice(LocalDate sellDate){
-            return regularPrice - (regularPrice * discount);
+        @Override
+        public double getPrice(LocalDate sellDate) {
+            return regularPrice - (regularPrice * super.getDiscount());
         }
 
         public Object makeCopy(){

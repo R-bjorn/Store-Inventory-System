@@ -2,13 +2,13 @@ import java.time.LocalDate;
 import java.time.Period;
 
 public class Item extends Store {
-    String title;
-    double regularPrice;
-    int itemID;
-    double discount = 0.0;
-    LocalDate releaseDate;
-    int quantity;
-    static int currentItemID = 9000;
+    private String title;
+    public double regularPrice;
+    private int itemID;
+    private double discount = 0.0;
+    private LocalDate releaseDate;
+    private int quantity;
+    private static int currentItemID = 9000;
 
     // Constructors
     public Item(String title, double regularPrice, LocalDate releaseDate, int quantity){
@@ -40,7 +40,9 @@ public class Item extends Store {
     public int getQuantity(){ return this.quantity; }
     public double getPrice(LocalDate sellDate){
         Period period = Period.between(releaseDate, sellDate);
+//        System.out.println("Period : " + period.getYears());
         double discountedPrice = regularPrice - (regularPrice * discount);
+//        System.out.println("Price : " + discountedPrice);
         return ((period.getYears() > 0) ? (discountedPrice - discountedPrice*0.5) : discountedPrice);
     }
 
@@ -56,11 +58,14 @@ public class Item extends Store {
     public double sell(int amount, LocalDate sellDate){
         Period period = Period.between(releaseDate, sellDate);
         if(period.isNegative()){
+//            System.out.println("Sell date is before releasing date");
             return 0;
         }
         if(amount > 0 && 0 <= quantity){
-            quantity--;
-            return getPrice(sellDate)*1.13; // Including Tax
+//            System.out.println("Okay Getting Things Ready");
+            this.quantity -= amount;
+
+            return this.getPrice(sellDate)*amount; // Including Tax
         }
         return 0;
     }

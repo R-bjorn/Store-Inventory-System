@@ -29,7 +29,9 @@ public class Game extends Item{
 
     @Override
     public double getPrice(LocalDate sellDate) {
+
         super.regularPrice = (discontinued) ? this.regularPrice: this.regularPrice*20;
+//        System.out.println("Game Price : " + super.regularPrice);
         return super.getPrice(sellDate);
     }
 
