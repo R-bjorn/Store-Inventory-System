@@ -1,7 +1,7 @@
 <div id="top"></div>
 
 # Store Inventory System
-Store Inventory System (**SIS**) is a software system for **tracking** _inventory levels, orders, sales_ and *deliveries*. It can also be used in the manufacturing industry to create a work order, bill of materials and other production-related documents.
+> Store Inventory System (**SIS**) is a software system for **tracking** _inventory levels, orders, sales_ and *deliveries*. It can also be used in the manufacturing industry to create a work order, bill of materials and other production-related documents.
 ## About this Project
 
 ### Goal :
